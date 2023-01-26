@@ -33,6 +33,7 @@ jobs:
           pip install bandit safety
 
   Safety and Bandit run:
+    runs-on: ubuntu-latest
       - name: Check requirements file with Safety
         run: |
           safety check -r Installation/requirements.txt
