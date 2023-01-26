@@ -35,4 +35,4 @@ jobs:
 
       - name: Check python files for vulnerabilities with Bandit
         run: |
-          bandit -r .
+          bandit -r . -ll
