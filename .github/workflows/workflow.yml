@@ -18,15 +18,10 @@ jobs:
   Install:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Install Bandit and Safety
         run: |
           pip install bandit safety
-
-  Checks:
-    needs: Install
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
       - name: check
         run: |
           ls -l
