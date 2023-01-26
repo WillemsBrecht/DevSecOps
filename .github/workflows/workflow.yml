@@ -37,6 +37,9 @@ jobs:
     needs: Install
     runs-on: ubuntu-latest
     steps:
+      - name: check
+        run: |
+          ls -l
       - name: Check requirements file with Safety
         run: |
           safety check -r Installation/requirements.txt
