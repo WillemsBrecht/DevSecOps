@@ -1,0 +1,6 @@
+README.md
+setup.py
+DevSecOps_paper.egg-info/PKG-INFO
+DevSecOps_paper.egg-info/SOURCES.txt
+DevSecOps_paper.egg-info/dependency_links.txt
+DevSecOps_paper.egg-info/top_level.txt
