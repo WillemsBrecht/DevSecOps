@@ -25,10 +25,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+  Install packages:
+    runs-on: ubuntu-latest
+    steps:
       - name: Install Bandit and Safety
         run: |
           pip install bandit safety
 
+  Safety and Bandit run:
       - name: Check requirements file with Safety
         run: |
           safety check -r Installation/requirements.txt
