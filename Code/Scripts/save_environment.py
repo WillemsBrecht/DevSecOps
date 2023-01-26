@@ -10,8 +10,9 @@ def print_messages(message_to_show):
 
 def save_conda_environment(root_of_project):
     print_messages("Started saving the environment to a YAML file...")
-    location_of_file = os.path.join(root_of_project, "environment_file\env.yaml")
-    subprocess.run(f'conda activate postgrad && conda env export -f { location_of_file } && conda deactivate', shell=False)
+    location_of_file = os.path.join(root_of_project, "environment_file\\env.yaml")
+    print(location_of_file)
+    subprocess.run(f'conda activate postgrad && conda env export -f { location_of_file } && conda deactivate', shell=True)
     print_messages(f"Environment file saved to location { location_of_file }")
 
 

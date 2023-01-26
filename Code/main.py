@@ -21,8 +21,10 @@ def process_user_option():
 
     if user_option == 1:
         save_environment.main()
+        process_user_option()
     elif user_option == 2:
         show_environment_file.main()
+        process_user_option()
     else:
         print("Closing application...")
         exit(0)
