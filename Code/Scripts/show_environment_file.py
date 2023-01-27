@@ -8,9 +8,9 @@ from src.utils import get_root_of_project
 
 def load_and_show_yaml_file(root_of_project):
     # Generates Error
-    #content = yaml.load(open(os.path.join(root_of_project, "environment_file\env.yaml")))
+    content = yaml.load(open(os.path.join(root_of_project, "environment_file\env.yaml")))
     # Is safe to use
-    content = yaml.safe_load(open(os.path.join(root_of_project, "environment_file\env.yaml")))
+    #content = yaml.safe_load(open(os.path.join(root_of_project, "environment_file\env.yaml")))
     pprint.pprint(content)
 
 
